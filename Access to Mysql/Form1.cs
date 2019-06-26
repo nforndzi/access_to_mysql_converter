@@ -305,13 +305,13 @@ namespace Access_to_Mysql
             switch ((OleDbType)(i))
             {
                 case OleDbType.WChar:
-                    return "VARCHAR(600)";
+                    return "TEXT";
                 case OleDbType.Double:
-                    return "DOUBLE";
+                    return "DECIMAL";
                 case OleDbType.Date:
                     return "DATE";
                 case OleDbType.Boolean:
-                    return "VARCHAR(10)";
+                    return "TINYINT(1)";
                 case OleDbType.Integer:
                     return "INT";
             }
